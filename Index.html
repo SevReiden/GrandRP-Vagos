@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GrandRP Vagos storys</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <h3>Select a story:</h3>
+    <select size="1" name="story1" id="storys1" onchange="storyChanged(this);">
+        <option value="story_1" >Bigfoot</option>
+        <option value="story_2">Space Ranger</option>
+        <option value="story_3">comming soon</option>
+        <option value="story_4">comming soon</option>
+        <option value="none" SELECTED>None</option>
+    </select>
+    <br>
+    <h2 id="Idee">Idee:</h2><br>
+    <h2 id="RP">RP:</h2><br>
+    <h2 id="Flucht">Flucht:</h2>
+</body>
+
+<script>
+function storyChanged(el) {
+    window["display_" + el.options[el.selectedIndex].value]();
+}
+
+function display_story_1() {
+    document.getElementById('Idee').textContent = "Idee: Der Mythos Bigfoot ist wahr";
+    document.getElementById('RP').textContent  = "RP: 1 Person als bigfoot mit stimmverzehrer die aus human Labs geflüchtet ist. An bigfoot wurden Experimente durchgeführt wo durch er jetzt halb Affe und Mensch ist wo durch  er reden kann. Vagos hat ihn gefunden und will ihn beschützen das ihn nichts mehr passiert weil es ein Vagos member ist der seit Jahren verschollen ist";
+    document.getElementById('Flucht').textContent = "Flucht: es wird um bigfoot verhandelt das er mit denn cops mit kommt und von dehnen beschützt wird alle cops ziehen ab Vagos wartet bis die weg sind und Baut die Sachen vor Ort ab und gewinnt da durch ";
+}
+
+function display_story_2() {
+    document.getElementById('Idee').textContent = "Idee: space Ranger die die Aliens jagen die wir wahren";
+    document.getElementById('RP').textContent  = "RP: wir sind auf der Erde gelandet und wollen die Aliens haben die gestern da wahren weil sie wichtige Informationen gestohlen haben";
+    document.getElementById('Flucht').textContent = "Flucht: noch kein Plan";
+}
+function display_story_3() {
+    alert("TEst3");
+}
+function display_story_4() {
+    alert("TEst4");
+}
+
+
+</script>
+</html>

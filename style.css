@@ -1,0 +1,20 @@
+h2{
+    font-family:'Courier New', Courier, monospace;
+    color: white;
+}
+
+h3{
+    text-align: center;
+    color: white;
+}
+#storys1{
+    margin-left: 47%;
+    margin-right: 50%;
+    size: 15px;
+    background-color: rgb(61, 61, 61);
+    color: white;
+}
+body{
+    background-image: url('http://phpography.com/images/simple-dark-background-wallpaper-1.jpg');
+}
+
